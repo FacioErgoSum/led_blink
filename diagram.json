@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "editor": "tinystudio",
+  "author": "tinyStudio",
+  "parts": [
+    { "id": "tinycore", "type": "tinycore", "x": 150, "y": 240 },
+    { "id": "resistor", "type": "resistor", "x": 520, "y": 200 },
+    { "id": "led", "type": "led", "x": 700, "y": 184 }
+  ],
+  "connections": [
+    ["tinycore:SIG", "resistor:a", "#36c46b"],
+    ["resistor:b", "led:A", "#36c46b"],
+    ["led:K", "tinycore:GND", "#8b94c8"]
+  ]
+}
